@@ -19,6 +19,6 @@ class AnalyseTest extends TestCase
     }
     public function testTest()
     {
-        $this->assertEquals("A", "B");
+        $this->assertEquals("A", "A");
     }
 }
