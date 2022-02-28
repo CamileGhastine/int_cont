@@ -2,9 +2,9 @@ name: PHP Composer
 
 on:
   push:
-    branches: [ main ]
+    branches: [ main, dev ]
   pull_request:
-    branches: [ main ]
+    branches: [ dev ]
 
 jobs:
   build:
@@ -57,4 +57,5 @@ jobs:
     - name: run script file to create db
       run: |
         chmod +x ./install.sh
+        ./install.sh
       shell: bash
