@@ -28,4 +28,4 @@ jobs:
     - uses: php-actions/phpunit@v3
 
     - name: version php
-    run: php --version
+      run: php --version
