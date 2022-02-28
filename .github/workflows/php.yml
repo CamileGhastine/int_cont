@@ -25,9 +25,6 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-php-
 
-    - name: Install dependencies
-      run: composer install --prefer-dist --no-progress
-
     - uses: php-actions/phpunit@v3
 
     # Add a test script to composer.json, for instance: "test": "vendor/bin/phpunit"
