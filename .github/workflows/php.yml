@@ -56,5 +56,5 @@ jobs:
 
     - name: run script file to create db
       run: |
-        chmod +x ./instal.sh
+        chmod +x ./install.sh
       shell: bash
