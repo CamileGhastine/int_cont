@@ -56,6 +56,9 @@ jobs:
 
     - name: run script file to create db
       run: |
+        sudo service mysql start
+        mysql -uroot -h127.0.0.1 -e 'SELECT version()'
         chmod +x ./install.sh
         ./install.sh
       shell: bash
+
